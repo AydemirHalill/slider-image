@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #A68D6F;
+}
+.container {
+    max-width: 1200px;
+    width: 95%;
+}
+.title {
+    margin: 1rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #26201B;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+.img-list {
+    display: flex;
+    overflow-x: auto;
+    column-gap: .5rem;
+    scrollbar-width: none;
+}
+.img-list::-webkit-scrollbar {
+    height: 4px;
+}
+.img-list::-webkit-scrollbar-track {
+    background: #26201B;
+}
+.img-list::-webkit-scrollbar-thumb {
+    background-color: #6B732D;
+}
+.img-list::-webkit-scrollbar-thumb:hover {
+    background: #535922;
+}
+.img-list img {
+    height: 14rem; width: 12rem;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.gallery {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+} 
+.button {
+    color: #6B732D;
+    font-size: 1.75rem;
+    transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    z-index: 2;
+    cursor: pointer;
+}
+.button:hover {
+    color: #535922;
+}
+#prev {
+    margin-right: -16px;
+    text-shadow: 5px 0px 18px #6B732D;
+    display: none;
+}
+#next {
+    margin-left: -16px;
+    text-shadow: -5px 0px 18px #6B732D;
+}
